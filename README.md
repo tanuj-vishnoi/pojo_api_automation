@@ -19,7 +19,8 @@ Rest WebService automation framework based on POJO approach
 	 read endpoint from end json and test json data 
 
 
-## main resource => end json contains the end point of the api
+## main resource
+	 end json contains the end point of the api
 
 
 -------------------------------- Test ------------------------------------
