@@ -1,0 +1,11 @@
+{
+	"credentials":{
+		"grant_type": "***",
+		"api_key": "***",
+		"client_id": "****",
+		"client_secret": "*****"
+	},
+	"domain":{
+		"domain_url": "https://****.**.com"
+	}
+}

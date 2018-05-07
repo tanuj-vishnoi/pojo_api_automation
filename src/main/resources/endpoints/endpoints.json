@@ -1,0 +1,87 @@
+{
+	"o****": {
+		"token_url": "******************8"
+	},
+	"accounts": {
+		"account_id": "************${account_id}",
+		"location_id": "************${account_id}/*******/${location_id}",
+		"client_id": "************${account_id}*****/${location_id}/client/${client_id}"
+	},
+	"****": {
+		"accounts": {
+			"get_allaccounts": "****************",
+			"get_account": "****************/${account_id}"
+		},
+		"audiences": {
+			"get_list_of_audiences": "******************",
+			"create_a_new_audiences": "******************",
+			"update_a_new_audiences": "******************",
+			"delete_a_audience_by_id": "******************/${audience_id}",
+			"get_audience_by_id": "******************/${audience_id}",
+			"get_list_of_audience_accounts_by_id": "api/v1/***********/{audience_id}*****",
+			"add_existing_account_to_an_audiences": "******************/{audience_id}*****",
+			"remove_an_account_from_audiences": "******************/${audience_id}*****/${account_id}",
+			"get_list_of_audience_account_by_id": "******************/${audience_id}*****/${account_id}",
+			"get_list_of_audience_resource_by_id": "******************/${audience_id}*****",
+			"delete_an_audience_resource": "******************/${audience_id}*****/${resource_id}",
+			"get_an_audience_resource_by_id": "******************/${audience_id}*****/${resource_id}",
+			"add_existing_resource_to_an_audience": "******************/${audience_id}*****/${resource_id}",
+			"update_an_existing_audience": "******************/${audience_id}*****/${resource_id}",
+			"remove_a_role_from_an_audience": "******************/${audience_id}*****/${resource_id}/roles",
+			"get_a_list_of_audience_resources_roles_by_id": "******************/${audience_id}*****/${resource_id}/roles",
+			"add_existing_roles_to_an_audience_resource": "******************/{audience_id}*****/{resource_id}/roles"
+		},
+		"roles": {
+			"get_a_list_of_roles": "***********/roles",
+			"add_a_new_role": "***********/roles",
+			"update_an_existing_audience_Role": "***********/roles",
+			"delete_a_role": "***********/roles/${role_id}",
+			"get_a_role_by_id": "***********/roles/${role_id}"
+		},
+		"resources": {
+			"get_list_of_resources": "****************",
+			"add _a_new_resource": "****************",
+			"udpate_an_existing_resource": "****************",
+			"delete_a_resource": "****************/${resource_id}",
+			"get_a_resource_by_id": "****************/${resource_id}"
+		}
+	},
+	"esignature": {
+		"get_list_of_doctypes": "*******esign*****",
+		"create_new_doctypes": "*******esign*****",
+		"get_doctype_information_using_id": "*******esign*****/${id}",
+		"get_doctype_information_using_name": "*******esign*****/${name}",
+		"get_list_of_master_documents": "*******esign*****",
+		"get_document_information": "*******esign*****/${id}",
+		"get_document_information_of_template_using_id": "*******esign*****/template/${id}",
+		"get_document_information_of_template_using_name": "*******esign*****/template/${name}",
+		"get_list_of_templates": "*******esign/templates",
+		"create_a_new_template": "*******esign/templates",
+		"get_template_information": "*******esign/templates/${id}"
+	},
+	"students": {
+		"create_new_student": "*******students",
+		"cancel_a_student": "************${account_id}/${alternate_id}/cancel",
+		"get_student_information": "************${account_id}/${student_id}",
+		"retrieve_current_student_status": "************{account_id}/{student_id}/status"
+	},
+	"leads": {
+		"create_a_new_student": "*******leads"
+	},
+	"address": {
+		"list_of_countries": "************countries",
+		"get_country_by_alpha3_code": "************countries/${alpha3}",
+		"get_list_of_canadian_provinces": "************provinces",
+		"get_canadian_province_by_abbreviation": "************provinces/${abbrev}",
+		"get_list_of_US_states": "************states",
+		"get_state_by_abbreviation": "************states/${abbrev}"
+	},
+	"companies": {
+		"get_company_by_companyid": "*******companies/${company_id}"
+	},
+	"encryption":{
+		"base64Encode_a_plain_text_string":"*******encryption/base64decode",
+		"use_libsodium_to_hash_plain_text_string":"*******encryption/password/hash/${plainText}"
+	
+	}
+}
